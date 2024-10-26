@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selector</title>
+    <style>
+        /* Basic styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 20px;
+            width: 200px;
+            border-radius: 8px;
+        }
+        .button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .seat-button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .seat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <button class="button" onclick="findSeat()">Find!</button>
+
+    <!-- Seat Label -->
+    <h3>Seats</h3>
+
+    <!-- Seat Buttons Grid -->
+    <div class="seat-grid">
+        <button class="seat-button" onclick="selectSeat(1)">1</button>
+        <button class="seat-button" onclick="selectSeat(2)">2</button>
+        <button class="seat-button" onclick="selectSeat(3)">3</button>
+        <button class="seat-button" onclick="selectSeat(4)">4</button>
+        <button class="seat-button" onclick="selectSeat(5)">5</button>
+        <button class="seat-button" onclick="selectSeat(6)">6</button>
+    </div>
+
+    <!-- "OK" Button -->
+    <button class="button" onclick="confirmSeats()">OK</button>
+</div>
+
+<script>
+    // Function for "Find!" button
+    function findSeat() {
+        alert("Finding best available seat...");
+    }
+
+    // Function to display selected seat number
+    function selectSeat(seatNumber) {
+        alert("Seat " + seatNumber + " selected");
+    }
+
+    // Function for "OK" button
+    function confirmSeats() {
+        alert("Seats confirmed!");
+    }
+</script>
+
+</body>
+</html>

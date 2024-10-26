@@ -1,0 +1,252 @@
+<style>
+    body{
+        margin: 0;
+    }
+    .div1{
+        width: 100%;
+        position: relative;
+      background-repeat: no-repeat;
+   
+    }
+    .img1{
+        width: 100%;
+
+        background-size: cover; 
+    }
+    .bttn1,.bttn2 ,.bttn3 ,.bttn4{
+        border-radius: 50%;
+        background-color: rgb(238, 209, 166);
+        font-size: 30px;
+        font-weight: 700;
+        height: 50px;
+        width: 50px;
+        color: rgb(126, 59, 59);
+        border: 1;
+        border-style: solid;
+        border-color:  rgb(126, 59, 59);
+        cursor: pointer;
+        text-align: center;
+        
+    }
+
+    .div-sub1{
+        position: absolute;
+        left: 520px;
+        bottom: 220;
+        
+        
+    }
+    .div-sub2{
+        position: absolute;
+        left: 770px;
+        bottom: 220;
+        
+        
+    }
+    .div-sub3{
+        position: absolute;
+        left: 340px;
+        bottom: 240;
+        
+        
+    }.div-sub4{
+        position: absolute;
+        right: 380px;
+        bottom: 230px;
+    }
+
+
+    .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.popup-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-header .checkmark {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+p {
+    color: #666;
+}
+
+.bttn5 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c8ccc8;
+}
+#popup {
+    display: none; 
+    
+}
+
+.container {
+            text-align: center;
+            border: 2px solid  rgb(126, 59, 59);
+            padding: 20px;
+            width: 200px;
+            border-radius: 8px;
+            backdrop-filter: blur(2px);
+        }
+        .button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: solid;
+            border-color:  rgb(126, 59, 59);;
+        }
+        .seat-button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50%;
+            border-style: solid;
+            border-color:  rgb(126, 59, 59);;
+        }
+        .seat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin: 10px 0;
+        }
+        h3{
+            margin: 0;
+        }
+        .icon{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+
+    border: solid;
+    border-width: 1;
+    border-color:rgb(41, 70, 25);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+.icon:hover {
+    background-color: #c8ccc8;
+}
+.div{
+    position: absolute;
+    top: 0;
+    left: 20;
+}
+.btt{
+     height: 50px;
+     width: 100px;
+     border: solid;
+     border-width: 1;
+     border-color:rgb(41, 70, 25);
+     font-weight: 700;
+     color: white;
+     backdrop-filter: blur(10px);
+     background: transparent;
+     border-radius: 15px;
+     font-size: 18px;
+}
+.be{
+    position: absolute;
+    top: 0;
+    left: 80;
+}
+h1{
+    position: absolute;
+    top: 0;
+    left: 470;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(126, 59, 59);
+}
+    </style>
+<body>
+    <div class="div1">
+        <h1>Find Your Place!!</h1>
+        <div class="div">
+            <a href="index.html"><svg class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2"><path d="M55.579 31.579a2 2 0 0 1 .208 2.583l-1.284 1.781a1.996 1.996 0 0 1-3.036.245A462554.14 462554.14 0 0 1 32 16.722L12.533 36.188a1.996 1.996 0 0 1-3.036-.245l-1.284-1.781a2 2 0 0 1 .208-2.583L32 8l23.579 23.579z" style="fill:none;stroke:#eff1f3;stroke-width:2px"/><path d="M13.977 34.745 32 16.722l18.023 18.023v20.002a2.25 2.25 0 0 1-.66 1.593 2.25 2.25 0 0 1-1.593.66H16.23a2.25 2.25 0 0 1-1.593-.66 2.25 2.25 0 0 1-.66-1.593V34.745zM20.736 19.264l-7.885 7.885V15.322h7.885v3.942z" style="fill:none;stroke:#dadada;stroke-width:2px"/><path d="M37 44.5a1.503 1.503 0 0 0-1.5-1.5h-7a1.503 1.503 0 0 0-1.5 1.5V57h10V44.5z" style="fill:none;stroke:#fdf8f8;stroke-width:2px"/></svg></a>
+        
+        </div>
+        <div class="be">
+            <button class="btt" onclick="window.location.href='page2.html';">Prev</button>
+        </div>
+        
+           <img class="img1" src="img/bamb2.jpeg" alt="">
+           <div class="div-sub1">
+            <button class="bttn1">1</button>
+           </div>
+           <div class="div-sub2">
+            <button class="bttn2">2</button>
+           </div>
+           <div class="div-sub3">
+            <button class="bttn3">3</button>
+           </div>
+           <div class="div-sub4">
+            <button class="bttn4">4</button>
+           </div>
+           
+    </div>
+    <div id="popup" class="popup">
+        
+            <div class="container">
+            
+                
+                <h2> Find your Seats!!</h2>
+            
+
+                <div class="seat-grid">
+                    <button class="seat-button" onclick="selectSeat(1)">1</button>
+                    <button class="seat-button" onclick="selectSeat(2)">2</button>
+                    <button class="seat-button" onclick="selectSeat(3)">3</button>
+                    <button class="seat-button" onclick="selectSeat(4)">4</button>
+                    <button class="seat-button" onclick="selectSeat(5)">5</button>
+                    <button class="seat-button" onclick="selectSeat(6)">6</button>
+                </div>
+            
+               
+                <button class="button" onclick="confirmSeats()">OK</button>
+            </div>
+        
+    </div>
+
+    
+      
+
+    <script src="script.js"></script>
+
+</body>

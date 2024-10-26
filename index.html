@@ -1,0 +1,77 @@
+
+<style>
+    body{
+        background-image: url("img/b.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    main {
+        backdrop-filter: blur(2px);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .div1{
+        width: 700;
+        margin-left: 300;
+        padding-top: 80;
+    }
+    h1{
+        width: 700;
+        text-align: center;
+        font-size: 45;
+        color: rgb(59, 16, 16);
+    }
+    p{
+        width: 500;
+        font-size: 20;
+        margin-left: 400;
+        text-align: center;
+        color: rgb(56, 55, 55);
+    }
+    .button{
+        height: 60px;
+        width: 150px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        margin-left: 550;
+        margin-top: 10px;
+        background: rgb(59, 16, 16);
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+    }
+    .bttn{
+        height: 0px;
+        width: 120px;
+        background-color: rgb(59, 16, 16);
+        border-radius: 20px;
+    }
+
+</style>
+<script>
+    function OpenNewPage(){
+        window.location.href='/page2.html';   }
+</script>
+<body>
+    <main>
+    <div class="div1">
+        <h1>"Find Your Seat, Because Wandering Aimlessly 
+            Isn't as Fun as It Looks!"</h1>
+    </div>
+    <div>
+        <p>"Tired of the 
+            classic ‘excuse me, I think that’s my seat’ situation? Let us help you find your spot in a snap! Our seat locator makes it easy to pinpoint your place without the aisle shuffles or the accidental armrest wars."</p>
+    </div>
+    <button class="button" onclick="window.location.href='page2.html';" >
+        "Dive In!"</button>
+        <div class="bttn">
+            <a href="page2.html" target="_blank">Explore Us</a>
+  
+        </div>
+</main>
+</body>
+
